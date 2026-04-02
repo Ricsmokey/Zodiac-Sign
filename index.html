@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zodiac Sign Calculator</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      background: #0d0d1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+    }
+    .card {
+      background: #1a1a2e;
+      border: 1px solid #2e2e5e;
+      border-radius: 16px;
+      padding: 40px;
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+      box-shadow: 0 0 40px rgba(100, 80, 255, 0.15);
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 6px; color: #c9b8ff; }
+    p.sub { color: #888; font-size: 0.9rem; margin-bottom: 28px; }
+    label {
+      display: block;
+      text-align: left;
+      font-size: 0.85rem;
+      color: #aaa;
+      margin-bottom: 8px;
+    }
+    input[type="date"] {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 10px;
+      border: 1px solid #3a3a6e;
+      background: #12122a;
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 24px;
+      outline: none;
+    }
+    input[type="date"]:focus {
+      border-color: #7c6fff;
+    }
+    button {
+      width: 100%;
+      padding: 13px;
+      background: #6c5ce7;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover { background: #7d6ef0; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>✨ Zodiac Calculator</h1>
+    <p class="sub">Enter your date of birth to find your sign</p>
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob">
+    <button onclick="submit()">Find My Sign</button>
+  </div>
+
+  <script>
+    function submit() {
+      const dob = document.getElementById("dob").value;
+      if (!dob) { alert("Please enter your date of birth."); return; }
+      const [year, month, day] = dob.split("-");
+      window.location.href = `/horoscope?month=${parseInt(month)}&day=${parseInt(day)}`;
+    }
+  </script>
+
+</body>
+</html>

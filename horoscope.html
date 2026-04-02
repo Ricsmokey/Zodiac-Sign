@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Zodiac Sign</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      background: #0d0d1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+    }
+    .card {
+      background: #1a1a2e;
+      border: 1px solid #2e2e5e;
+      border-radius: 16px;
+      padding: 40px;
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+      box-shadow: 0 0 40px rgba(100, 80, 255, 0.15);
+    }
+    .emoji { font-size: 4rem; margin-bottom: 16px; }
+    h2 { font-size: 1rem; color: #888; margin-bottom: 8px; }
+    h1 { font-size: 2.2rem; color: #c9b8ff; margin-bottom: 28px; }
+    a {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #6c5ce7;
+      color: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+    a:hover { background: #7d6ef0; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="emoji">
+      {% if sign == "Aries" %}♈
+      {% elif sign == "Taurus" %}♉
+      {% elif sign == "Gemini" %}♊
+      {% elif sign == "Cancer" %}♋
+      {% elif sign == "Leo" %}♌
+      {% elif sign == "Virgo" %}♍
+      {% elif sign == "Libra" %}♎
+      {% elif sign == "Scorpio" %}♏
+      {% elif sign == "Sagittarius" %}♐
+      {% elif sign == "Capricorn" %}♑
+      {% elif sign == "Aquarius" %}♒
+      {% elif sign == "Pisces" %}♓
+      {% endif %}
+    </div>
+    <h2>Your Zodiac Sign is</h2>
+    <h1>{{ sign }}</h1>
+    <a href="/">← Try Another Date</a>
+  </div>
+</body>
+</html>
