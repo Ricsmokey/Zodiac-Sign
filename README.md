@@ -2,9 +2,9 @@
 
 ##  Overview
 
-The Zodiac Sign Calculator is a simple web-based application that allows users to enter their date of birth and instantly discover their zodiac sign.
+The Zodiac Sign Calculator is a simple web-based application that allows users to enter their date of birth and discover their zodiac sign.
 
-It uses a lightweight Python HTTP server and dynamic HTML rendering to deliver results in real time.
+It uses a lightweight Python HTTP server and HTML rendering to deliver results in real time.
 
 ---
 
@@ -22,7 +22,7 @@ It uses a lightweight Python HTTP server and dynamic HTML rendering to deliver r
 
 * **Backend:** Python
 * **Frontend:** HTML, CSS
-* **Templating Engine:** Jinja2
+* **Engine:** Jinja2
 * **Server:** Built-in Python HTTP Server
 
 ---
@@ -71,12 +71,6 @@ Run the Python server:
 python "Zodiac Calculator.py"
 ```
 
-You should see:
-
-```
-Serving HTTP on localhost port 8080...
-```
-
 Open your browser and go to:
 
 ```
@@ -91,29 +85,9 @@ http://localhost:8080
 2. The app extracts the **month** and **day**.
 3. A request is sent to the `/horoscope` route.
 4. The Python server determines the zodiac sign using predefined date ranges.
-5. The result is rendered dynamically using a Jinja2 template.
 
 ---
 
-
-##  Notes
-
-* Ensure your folder structure matches the expected layout (`static` and `templates` folders).
-* The server runs locally and is intended for learning or small-scale use.
-
----
-
-##  Contributing
-
-Contributions are welcome! Feel free to fork this project and submit a pull request.
-
----
-
-##  License
-
-This project is open-source and available under the MIT License.
-
----
 
 ##  Author
 
