@@ -24,6 +24,7 @@ It uses a lightweight Python HTTP server and HTML rendering to deliver results i
 * **Frontend:** HTML, CSS
 * **Engine:** Jinja2
 * **Server:** Built-in Python HTTP Server
+* **Deployment:** Vercel
 
 ---
 
@@ -49,7 +50,7 @@ project-folder/
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/Ricsmokey/Zodiac-Sign.git
 cd project-folder
 ```
 
