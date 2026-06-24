@@ -89,10 +89,7 @@ http://localhost:8080
 
 ---
 
+## Author
 
-##  Author
-
-Akorede Kareem
-GitHub: https://github.com/Ricsmokey
-
+**Akorede Kareem** — [github.com/Ricsmokey](https://github.com/Ricsmokey)
 ---
